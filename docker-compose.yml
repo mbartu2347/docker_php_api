@@ -6,8 +6,6 @@ services:
     container_name: php_api_container
     image: php:8.0-apache
     volumes:
-      - my_php_data:/var/www/html/
+      - ${WEBAPP_STORAGE_HOME}/php/src:/var/www/html/
     ports:
       - 8000:80
-volumes:
-  
