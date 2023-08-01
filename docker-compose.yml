@@ -9,3 +9,7 @@ services:
       - ./php/src:/var/www/html/
     ports:
       - 8000:80
+    volumes:
+      - my_php_data:/var/www/html
+volumes:
+  my_php_data:
